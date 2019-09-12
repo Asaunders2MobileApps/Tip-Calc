@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Lab4.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+ 
+        <Entry Placeholder="Bill" PlaceholderColor="Black" x:Name="iBill" Keyboard="Numeric"></Entry>
+        <Entry Placeholder="Tip %" PlaceholderColor="Black" x:Name="iTip" Keyboard="Numeric"></Entry>
+
+        <Button Text="Calculate Total" Clicked="Calculate_Total"/>
+
+        <Label Text="Tip Total" 
+               HorizontalOptions="Center"
+               VerticalOptions="EndAndExpand"
+               x:Name="oTip"/>
+
+        <Label Text="Bill Ammount" 
+               HorizontalOptions="Center"
+               VerticalOptions="StartAndExpand"
+               x:Name="oBillAmount"/>
+    </StackLayout>
+
+</ContentPage>
